@@ -7,7 +7,7 @@ export function fetchRangersStats() {
             .then((response) => {
                 dispatch({
                     type: "FETCH_RANGERS_STATS_FULFILLED",
-                    payload: response.data.stats
+                    payload: response.data.stats[0].splits[0]
                 })
             })
             .catch((err) => {

@@ -1,6 +1,34 @@
 
 export default function reducer (state = {
-    data: [],
+    data: {},
+    evGGARatio: '',
+    faceOffWinPercentage: '',
+    faceOffsLost:'',
+    faceOffsTaken: '',
+    faceOffsWon: '',
+    gamesPlayed: '',
+    goalsAgainstPerGame: '',
+    goalsPerGame: '',
+    losses: '',
+    ot: '',
+    penaltyKillPercentage: '',
+    powerPlayGoals: '',
+    powerPlayGoalsAgainst: '',
+    powerPlayOpportunities: '',
+    powerPlayPercentage: '',
+    ptPctg: '',
+    pts: '',
+    savePctg: '',
+    shootingPctg: '',
+    shotsAllowed: '',
+    shotsPerGame: '',
+    winLeadFirstPer: '',
+    winLeadSecondPer: '',
+    winOppScoreFirst: '',
+    winOutshootOpp: '',
+    winOutshotByOpp: '',
+    winScoreFirst: '',
+    wins: '',
     fetching: false,
     fetched: false,
     error: null
@@ -24,7 +52,10 @@ export default function reducer (state = {
                 ...state,
                 fetching: false,
                 fetched: true,
-                data: action.payload
+                data: action.payload.stat,
+                // Accessing nested props from API directly here rather than in Object.entires in App.js
+                gamesPlayed: action.payload.stat.gamesPlayed,
+                losses: action.payload.stat.losses
             }
         }
         default: return state;

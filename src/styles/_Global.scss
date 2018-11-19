@@ -1,4 +1,15 @@
+$rangersRed : #ba062a;
+$rangersBlue: #00428d;
+
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Roboto');
+//font-family: 'Fjalla One', sans-serif;
+//font-family: 'Roboto', sans-serif;
+
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Serif');
+//font-family: 'IBM Plex Serif', serif;
+//font-family: 'IBM Plex Mono', monospace;
 
 body {
     background-color: snow;
+    font-family: 'IBM Plex Serif', serif;
 }

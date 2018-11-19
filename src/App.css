@@ -1,2 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Roboto");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Serif");
 body {
-  background-color: snow; }
+  background-color: snow;
+  font-family: 'IBM Plex Serif', serif; }
+
+.team-stats-container {
+  background-color: snow;
+  color: #ba062a;
+  font-size: 2em;
+  text-align: center; }
+
+.team-stats-container .stat-col {
+  margin-top: 5em;
+  margin-bottom: 5em; }
+
+.team-stats-container img {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+.team-stats-container p {
+  background-color: #00428d;
+  color: snow;
+  border-radius: 50%;
+  height: 5em;
+  width: 5em;
+  margin: auto;
+  line-height: 5em;
+  border: 1px solid snow; }
+
+.team-stats-container h2 {
+  font-size: 1.2em;
+  padding-bottom: .8em; }

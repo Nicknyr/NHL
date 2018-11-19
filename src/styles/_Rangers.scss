@@ -1,0 +1,36 @@
+
+.team-stats-container {
+    background-color: snow;
+    color: $rangersRed;
+    font-size: 2em;
+    text-align: center;
+
+    .stat-col {
+        //background-color: pink;
+        margin-top: 5em;
+        margin-bottom: 5em;
+    }
+
+    img {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    p {
+       background-color: $rangersBlue;
+       color: snow;
+       border-radius: 50%; 
+       height: 5em;
+       width: 5em;
+       margin: auto;
+       line-height: 5em;
+       border: 1px solid snow;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        padding-bottom: .8em;
+    }
+}
+
+

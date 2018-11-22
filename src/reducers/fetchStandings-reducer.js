@@ -1,6 +1,13 @@
 
 export default function recuder (state = {
-    data: [],
+    data: {},
+    records: {},
+    divisionRank: '',
+    conferenceRank: '',
+    leagueRank: '',
+    streakCode: '',
+    streakNumber: '',
+    streakType: '',
     fetching: false,
     fetched: false,
     error: null
@@ -24,7 +31,15 @@ export default function recuder (state = {
                 ...state,
                 fetching: false,
                 fetched: true,
-                data: action.payload
+                data: action.payload,
+                records: action.payload.records,
+                rangersStandings: action.payload.records[0].teamRecords[1],
+                divisionRank: action.payload.records[0].teamRecords[1].divisionRank,
+                conferenceRank: action.payload.records[0].teamRecords[1].conferenceRank,
+                leagueRank: action.payload.records[0].teamRecords[1].leagueRank,
+                streakCode: action.payload.records[0].teamRecords[1].streak.streakCode,
+                streakNumber: action.payload.records[0].teamRecords[1].streak.streakNumber,
+                streakType: action.payload.records[0].teamRecords[1].streak.streakType
             }
         }
         default: return state;

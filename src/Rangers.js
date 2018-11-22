@@ -48,6 +48,15 @@ class Rangers extends Component {
     const winScoreFirst = this.props.rangersStats.winScoreFirst;
     const wins = this.props.rangersStats.wins;
 
+    // Standings data
+    //console.log(this.props.standings.rangersStandings);
+    const divisionRank= this.props.standings.divisionRank;
+    const conferenceRank = this.props.standings.conferenceRank;
+    const leagueRank = this.props.standings.leagueRank;
+    const streakCode = this.props.standings.streakCode;
+    const streakNumber = this.props.standings.streakNumber;
+    const streakType = this.props.standings.streakType;
+
 
     return (
       <Grid>
@@ -63,7 +72,7 @@ class Rangers extends Component {
           </Col>
           <Col className="stat-col" sm={12} md={4}>
             <h2>Wins</h2>
-          <p>{wins}</p>
+            <p>{wins}</p>
           </Col>
           <Col className="stat-col" sm={12} md={4}>
             <h2>Losses</h2>

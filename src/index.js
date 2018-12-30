@@ -8,6 +8,12 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from "redux-thunk";
 import logger from 'redux-logger';
 import reducers from './reducers';
+import { BrowserRouter } from "react-router-dom";
+import { Router, Route, Switch } from 'react-router-dom';
+import Rangers from './Rangers.js';
+import RangersRoster from './RangersRoster';
+import PlayerProfile from './PlayerProfile';
+
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -20,7 +26,13 @@ const store = createStore(reducers, composeEnhancers(
 
 ReactDOM.render(
     <Provider store={store}>
-        <App />
+        <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={Rangers} />
+          <Route path="/playerstats" component={PlayerProfile} />
+          <Route path="/roster" component={RangersRoster} />
+        </Switch>
+      </BrowserRouter>
     </Provider>,
     document.getElementById('root'));
 

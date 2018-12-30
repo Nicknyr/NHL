@@ -12,7 +12,7 @@ export default function reducer (state = {
     faceOffPct: '',
     gameWinningGoals: '',
     games: '',
-    goals: '',
+    goals: [],
     hits: '',
     overTimeGoals: '',
     penaltyMinutes: '',

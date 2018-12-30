@@ -20,42 +20,42 @@ class Rangers extends Component {
     // Accessing this.props.rangersStat.data and it's nested properties directly in the reducer
     //console.log(this.props.rangersStats.data);
     const losses = this.props.rangersStats.losses;
-    const evGGARatio = this.props.rangersStats.evGGARatio;
-    const faceOffWinPercentage = this.props.rangersStats.faceOffWinPercentage;
-    const faceOffsLost = this.props.rangersStats.faceOffsLost;
-    const faceOffsTaken = this.props.rangersStats.faceOffsTaken;
-    const faceOffsWon = this.props.rangersStats.faceOffsWon;
+    //const evGGARatio = this.props.rangersStats.evGGARatio;
+    //const faceOffWinPercentage = this.props.rangersStats.faceOffWinPercentage;
+    //const faceOffsLost = this.props.rangersStats.faceOffsLost;
+    //const faceOffsTaken = this.props.rangersStats.faceOffsTaken;
+    //const faceOffsWon = this.props.rangersStats.faceOffsWon;
     const gamesPlayed = this.props.rangersStats.gamesPlayed;
     const goalsAgainstPerGame = this.props.rangersStats.goalsAgainstPerGame;
     const goalsPerGame = this.props.rangersStats.goalsPerGame;
     const ot = this.props.rangersStats.ot;
-    const penaltyKillPercentage = this.props.rangersStats.penaltyKillPercentage;
-    const powerPlayGoals = this.props.rangersStats.powerPlayGoals;
-    const powerPlayGoalsAgainst = this.props.rangersStats.powerPlayGoalsAgainst;
-    const powerPlayOpportunities = this.props.rangersStats.powerPlayOpportunities;
-    const powerPlayPercentage = this.props.rangersStats.powerPlayPercentage;
-    const ptPctg = this.props.rangersStats.ptPctg;
+    //const penaltyKillPercentage = this.props.rangersStats.penaltyKillPercentage;
+    //const powerPlayGoals = this.props.rangersStats.powerPlayGoals;
+    //const powerPlayGoalsAgainst = this.props.rangersStats.powerPlayGoalsAgainst;
+    //const powerPlayOpportunities = this.props.rangersStats.powerPlayOpportunities;
+    //const powerPlayPercentage = this.props.rangersStats.powerPlayPercentage;
+    //const ptPctg = this.props.rangersStats.ptPctg;
     const pts = this.props.rangersStats.pts;
     const savePctg = this.props.rangersStats.savePctg;
     const shootingPctg = this.props.rangersStats.shootingPctg;
     const shotsAllowed = this.props.rangersStats.shotsAllowed;
     const shotsPerGame = this.props.rangersStats.shotsPerGame;
-    const winLeadFirstPer = this.props.rangersStats.winLeadFirstPer;
-    const winLeadSecondPer = this.props.rangersStats.winLeadSecondPer;
-    const winOppScoreFirst = this.props.rangersStats.winOppScoreFirst;
-    const winOutshootOpp = this.props.rangersStats.winOutshootOpp;
-    const winOutshotByOpp = this.props.rangersStats.winOutshotByOpp;
-    const winScoreFirst = this.props.rangersStats.winScoreFirst;
+    //const winLeadFirstPer = this.props.rangersStats.winLeadFirstPer;
+    //const winLeadSecondPer = this.props.rangersStats.winLeadSecondPer;
+    //const winOppScoreFirst = this.props.rangersStats.winOppScoreFirst;
+    //const winOutshootOpp = this.props.rangersStats.winOutshootOpp;
+    //const winOutshotByOpp = this.props.rangersStats.winOutshotByOpp;
+    //const winScoreFirst = this.props.rangersStats.winScoreFirst;
     const wins = this.props.rangersStats.wins;
 
     // Standings data
     //console.log(this.props.standings.rangersStandings);
-    const divisionRank= this.props.standings.divisionRank;
-    const conferenceRank = this.props.standings.conferenceRank;
-    const leagueRank = this.props.standings.leagueRank;
-    const streakCode = this.props.standings.streakCode;
-    const streakNumber = this.props.standings.streakNumber;
-    const streakType = this.props.standings.streakType;
+    //const divisionRank= this.props.standings.divisionRank;
+    //const conferenceRank = this.props.standings.conferenceRank;
+    //const leagueRank = this.props.standings.leagueRank;
+    //const streakCode = this.props.standings.streakCode;
+    //const streakNumber = this.props.standings.streakNumber;
+    //const streakType = this.props.standings.streakType;
 
 
     return (
